@@ -1,6 +1,6 @@
 {
   "name": "jscpd-react-reporter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A reporter wrote with React for jscpd",
   "repository": {
     "type": "git",
