@@ -26,7 +26,7 @@ class ReactReporter {
       getFileContent('./index.html')
         .replace('dist/index.css', `https://unpkg.com/${name}@${version}/dist/index.css`)
         .replace('dist/index.js', `https://unpkg.com/${name}@${version}/dist/index.js`)
-        .replace('<script src="docs/StatsData.js">', `<script>window.StatsData = '${deflateData(outputs)}'`)
+        .replace('<script src="docs/StatsData.js">', `<script>window.StatsData = '${deflateData(StatsData)}'`)
     )
   }
 }
