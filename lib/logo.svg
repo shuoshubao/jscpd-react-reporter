@@ -1,0 +1,31 @@
+<svg width="204" height="85" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <text
+      font-family="'Courier New', Courier, monospace"
+      font-size="70"
+      y="58.5"
+      x="0"
+      stroke-width="0"
+      stroke="#000"
+      fill="#007bff"
+    >js</text>
+    <text
+      font-family="'Courier New', Courier, monospace"
+      font-size="70"
+      y="58.5"
+      x="78"
+      stroke-width="0"
+      stroke="#000"
+      fill="#B200B2"
+    >cpd</text>
+    <text
+      font-family="'Courier New', Courier, monospace"
+      font-size="12"
+      y="82"
+      x="47"
+      stroke-width="0"
+      stroke="#000"
+      fill="#c0c0c0"
+    >Copy/Paste Detector</text>
+  </g>
+</svg>

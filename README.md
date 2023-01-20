@@ -15,5 +15,7 @@ npm i -g jscpd-react-reporter
 # Usage
 
 ```sh
+jscpd -r react ./src
+
 jscpd -r react -o JscpdReport.html ./src
 ```
