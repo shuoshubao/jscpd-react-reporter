@@ -24,8 +24,8 @@ class ReactReporter {
     writeFileSync(
       resolve(cwd, output),
       getFileContent('./index.html')
-        .replace('dist/index.css', `https://unpkg.com/${name}@${version}/dist/index.css`)
-        .replace('dist/index.js', `https://unpkg.com/${name}@${version}/dist/index.js`)
+        .replace('dist/index.css', 'https://unpkg.com/jscpd-react-reporter@latest/dist/index.css')
+        .replace('dist/index.js', 'https://unpkg.com/jscpd-react-reporter@latest/dist/index.js')
         .replace('<script src="docs/StatsData.js">', `<script>window.StatsData = '${deflateData(StatsData)}'`)
     )
   }
