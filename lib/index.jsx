@@ -112,7 +112,6 @@ const App = () => {
               children: (
                 <>
                   <Table
-                    bordered
                     rowKey="path"
                     columns={SourcesColumns}
                     dataSource={sortBy(SourcesDataSource, ['duplicatedLines']).reverse()}
