@@ -3,20 +3,26 @@ import { Typography } from 'antd'
 import hljs from 'highlight.js/lib/core'
 import javascript from 'highlight.js/lib/languages/javascript'
 import typescript from 'highlight.js/lib/languages/typescript'
+import xml from 'highlight.js/lib/languages/xml'
 import css from 'highlight.js/lib/languages/css'
-import less from 'highlight.js/lib/languages/less'
 import scss from 'highlight.js/lib/languages/scss'
+import less from 'highlight.js/lib/languages/less'
+import json from 'highlight.js/lib/languages/json'
+import markdown from 'highlight.js/lib/languages/markdown'
+import plaintext from 'highlight.js/lib/languages/plaintext'
 
 hljs.registerLanguage('javascript', javascript)
-hljs.registerLanguage('jsx', javascript)
 hljs.registerLanguage('typescript', typescript)
-hljs.registerLanguage('tsx', typescript)
+hljs.registerLanguage('xml', xml)
 hljs.registerLanguage('css', css)
-hljs.registerLanguage('less', less)
 hljs.registerLanguage('scss', scss)
+hljs.registerLanguage('less', less)
+hljs.registerLanguage('json', json)
+hljs.registerLanguage('markdown', markdown)
+hljs.registerLanguage('plaintext', plaintext)
 
 export const getHighlightCode = (code, language) => {
-  return hljs.highlight(code, { language }).value
+  return hljs.highlight(code, { language: hljs.getLanguage(language) ? language : 'plaintext' }).value
 }
 
 export const isDark = () => {
